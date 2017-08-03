@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.arxdev30.testrecycler.DetailActicity">
+    >
 
     <View
         android:id="@+id/cont_colored_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/div_center"
+        android:layout_above="@+id/div_center"
         android:background="@color/GREEN" />
 
     <TextView
@@ -19,9 +17,9 @@
         android:id="@+id/lbl_date_and_time_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/div_center"
+        android:layout_above="@+id/div_center"
         android:padding="@dimen/sixteen"
-        tools:text="2:43 7/8/2017" />
+        android:text="2:43 7/8/2017" />
 
     <view
         android:id="@+id/div_center"
@@ -30,12 +28,12 @@
         android:layout_centerVertical="true" />
 
     <TextView
+        style="@style/Text.Primary"
         android:id="@+id/lbl_message_body"
-        style="@style/Text.Secondary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/div_center"
         android:padding="16dp"
-        tools:text="@string/lorem" />
+        android:text="@string/lorem" />
 
 </RelativeLayout>
